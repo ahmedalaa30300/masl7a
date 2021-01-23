@@ -3,7 +3,7 @@
        <div class="row">
            <div class="col-6 left d-none d-md-block">
                <div>
-                   <img class="" src="..\..\..\public\imgs\Authentication-pana@1X.png">
+                   <img class="" src="git remote show origin.\..\..\public\imgs\Authentication-pana@1X.png">
                    <p>
                        Help us getting better by sending your thoughts about us and about our services,
                        you can also mention any other points that are related  by sending your by 
@@ -51,7 +51,6 @@ export default {
             var reqnumber = [0,1,2,3,4,5,6,7,8,9];  
             var isallow   = reqnumber.includes(parseInt(e.target.value)); 
             
-
             if(isallow){
                 if(e.target.nextElementSibling != null){
                     e.target.nextElementSibling.focus();
