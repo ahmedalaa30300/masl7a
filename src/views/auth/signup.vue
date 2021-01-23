@@ -68,7 +68,7 @@ body{
 .row{
     margin: 0 !important;
         .left {
-        background-color: #BA43DE;
+        background-color: #447AE6;
         height: 100vh;
         border-bottom-right-radius: 25px;
         border-top-right-radius: 25px;
@@ -184,8 +184,9 @@ body{
 
             .create-account{
                 .btn-create-account{
-                     width: 461px;
-                    background-color: #BC45D6;
+                    width: 461px;
+                    opacity: 0.5019607843137255;
+                    background-color: #4378E3;
                     color: white;
                     border: none;
                     cursor: pointer;
@@ -196,6 +197,13 @@ body{
                     height: 50px;
                     margin-bottom: 10px;
                     outline: none;
+                     transition: all 0.2s;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    &:focus{
+                        outline: none;
+                    }
                 }
             }
         }

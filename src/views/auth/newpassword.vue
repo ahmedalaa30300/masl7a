@@ -3,7 +3,7 @@
        <div class="row">
            <div class="col-6 left d-none d-md-block">
                <div>
-                   <img class="" src="..\..\..\public\imgs\Secure data-pana@1X.png">
+                   <img class="" src="..\..\..\public\imgs\freepik--Character--inject-70@1X.png">
                    <p>
                        Help us getting better by sending your thoughts about us and about our services,
                        you can also mention any other points that are related  by sending your by 
@@ -45,7 +45,7 @@ body{
 .row{
     margin: 0 !important;
         .left {
-        background-color: #BA43DE;
+        background-color: #447AE6;
         height: 100vh;
         border-bottom-right-radius: 25px;
         border-top-right-radius: 25px;
@@ -122,8 +122,9 @@ body{
 
             .create-account{
                 .btn-create-account{
-                     width: 461px;
-                    background-color: #BC45D6;
+                    width: 461px;
+                    opacity: 0.5019607843137255;
+                    background-color: #4378E3;
                     color: white;
                     border: none;
                     cursor: pointer;
@@ -133,6 +134,13 @@ body{
                     box-shadow: 2px 2px 3px grey;
                     height: 50px;
                     margin-bottom: 20px;
+                     transition: all 0.2s;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    &:focus{
+                        outline: none;
+                    }
                 }
             }
         }

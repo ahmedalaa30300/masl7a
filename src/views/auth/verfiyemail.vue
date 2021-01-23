@@ -15,10 +15,10 @@
                <h1 class="my-4 text-center">Verify your e-mail</h1>
                <p class="ppp"> Please enter the 4 digit code sent to name@example.com</p>
              <div class="my-4 v-code">
-                 <input type="text" class="i-code" @keyup="check($event)" v-model="i.i1">
-                 <input type="text" class="i-code" @keyup="check($event)" v-model="i.i2"> 
-                 <input type="text" class="i-code" @keyup="check($event)" v-model="i.i3">
-                 <input type="text" class="i-code" @keyup="check($event)" v-model="i.i4">
+                 <input type="number" min="0"  max="9" class="i-code" @keyup="check($event)" v-model="i.i1">
+                 <input type="number" min="0"  max="9" class="i-code" @keyup="check($event)" v-model="i.i2"> 
+                 <input type="number" min="0"  max="9" class="i-code" @keyup="check($event)" v-model="i.i3">
+                 <input type="number" min="0"  max="9" class="i-code" @keyup="check($event)" v-model="i.i4">
              </div>
              <h1 id="count"></h1>
              <div class="form-group my-5">
@@ -48,14 +48,14 @@ export default {
     methods:{
         check(e){
             // check verfiy inputs
-            var TypeOfKey = parseInt(e.key);
             var reqnumber = [0,1,2,3,4,5,6,7,8,9];  
             var isallow   = reqnumber.includes(parseInt(e.target.value)); 
             
 
-            if(Number.isInteger(TypeOfKey) && isallow){
+            if(isallow){
                 if(e.target.nextElementSibling != null){
                     e.target.nextElementSibling.focus();
+                    
                 }
             } else {
                 e.target.value = '';
@@ -69,18 +69,18 @@ export default {
 
         const CountdownE = document.getElementById("count");
 
-     var my = setInterval(()=>{
-            const minutes = Math.floor(time / 60);
-            const sec     = time % 60;
+        var my = setInterval(()=>{
+                const minutes = Math.floor(time / 60);
+                const sec     = time % 60;
 
-            CountdownE.innerHTML = `${minutes}: ${sec}`;
+                CountdownE.innerHTML = `${minutes}: ${sec}`;
 
-            time--;
-            if(time < 0) {
-                clearInterval(my);
-            }
-        }, 1000)
-    }
+                time--;
+                if(time < 0) {
+                    clearInterval(my);
+                }
+            }, 1000)
+        }
 }
 </script>
 
@@ -91,7 +91,7 @@ body{
 .row{
     margin: 0 !important;
         .left {
-        background-color: #BA43DE;
+        background-color: #447AE6;
         height: 100vh;
         border-bottom-right-radius: 25px;
         border-top-right-radius: 25px;
@@ -120,6 +120,11 @@ body{
          margin-top: 80px;
         .ppp{
             font-size: 19px;
+        }
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        
         }
         .i-code{
             border: none;
@@ -159,8 +164,9 @@ body{
 
             .create-account{
                 .btn-create-account{
-                     width: 461px;
-                    background-color: #BC45D6;
+                    width: 461px;
+                    opacity: 0.5019607843137255;
+                    background-color: #4378E3;
                     color: white;
                     border: none;
                     cursor: pointer;
@@ -170,7 +176,13 @@ body{
                     box-shadow: 2px 2px 3px grey;
                     height: 50px;
                     margin-bottom: 20px;
-                    
+                    transition: all 0.2s;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    &:focus{
+                        outline: none;
+                    }
                 }
             }
         }
