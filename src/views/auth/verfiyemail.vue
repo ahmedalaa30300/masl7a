@@ -58,6 +58,7 @@ export default {
                 }
             } else {
                 e.target.value = '';
+                console.log("test")
             }
         }
     },
