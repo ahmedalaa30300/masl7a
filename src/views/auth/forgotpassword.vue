@@ -44,8 +44,7 @@ body{
         .left {
         background-color: #447AE6;
         height: 100vh;
-        border-bottom-right-radius: 25px;
-        border-top-right-radius: 25px;
+       
         div{
             display: flex;
             flex-direction: column;

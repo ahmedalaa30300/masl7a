@@ -70,8 +70,6 @@ body{
         .left {
         background-color: #447AE6;
         height: 100vh;
-        border-bottom-right-radius: 25px;
-        border-top-right-radius: 25px;
         div{
             display: flex;
             flex-direction: column;
@@ -93,8 +91,11 @@ body{
     }
 
     .right{
+        .d-flex{
+         width: 80%;
+         margin: auto;
         .btnn{
-           width: 251px;
+             width: 251px;
             outline: none;
             margin: auto;
             border-radius: 10px;
@@ -112,6 +113,7 @@ body{
                 }
             }
         }
+     }
         .hr{
             color: #0a000085;
             &::before{
