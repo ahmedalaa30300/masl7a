@@ -1,7 +1,7 @@
 <template>
     <div>
        <div class="row">
-           <div class="col-6 left d-none d-md-block offset-1 offset-md-0">
+          <div class="col-6 left d-none d-md-block offset-1 offset-md-0">
                <div>
                    <img class="" src="..\..\..\public\imgs\Mobile login-pana@1X.png">
                    <p>
@@ -14,14 +14,14 @@
            <div class="col-12 col-md-6 right text-center">
                <h1 class="my-4 text-center">Sign Up</h1>
                <div class="signup-btn">
-                <button class="btn-google"> 
-                   <div class="d-flex">
-                       <img src="..\..\..\public\imgs\Icon awesome-google@1X.png" alt="" srcset="" width="25px">
-                       login with google
-                       <div class="ml-auto"></div>
-                   </div>
+                <div class="d-flex">
+                    <button class="btn btn-primary btn-lg btn-block btnn google mr-2"> 
+                   <img src="..\..\..\public\imgs\Icon awesome-google@1X.png" alt="" srcset="" width="25px"> login with google 
                 </button>
-                <button class="facebook-btn">f</button>
+                <button class="btn btn-primary btn-lg btn-block btnn facebook"> 
+                   <img src="..\..\..\public\imgs\Icon awesome-facebook-f@1X.png" alt="" srcset="" width="25px"> login with facebook 
+                </button>
+                </div>
               </div>
               <p class="hr mt-3 d-none d-lg-block">or</p>
               <div class="form-group mt-3">
@@ -93,41 +93,25 @@ body{
     }
 
     .right{
-        .btn-google{
-           width: 461px;
-          display: inline-block;
-            background-color: #E71111;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 10px;
-            padding: 6px;
-            margin-right: 10px;
-            box-shadow: 2px 2px 3px grey;
-            height: 50px;
+        .btnn{
+           width: 251px;
             outline: none;
+            margin: auto;
+            border-radius: 10px;
+            &.google{
+             background-color: #E71111 !important;
             img{
-                margin-right:133px ;
-                margin-left: 20px;
+                margin-right:10px ;
+               }
+            }
+            &.facebook{
+              background-color:#0973FF;
+              img{
+                width: 14px;
+                margin-right: 10px;
+                }
             }
         }
-        .facebook-btn{
-            background-color: #0973FF;
-            outline: none;
-            border: none;
-            padding: 6px;
-            border-radius: 10px;
-            width: 63px;
-            box-shadow: 2px 2px 3px grey;
-            color: white;
-            font-size: 26px;
-            margin-top: -13px;
-            cursor: pointer;
-            font-weight:bold ;
-            display: inline-block;
-        
-        }
-
         .hr{
             color: #0a000085;
             &::before{
