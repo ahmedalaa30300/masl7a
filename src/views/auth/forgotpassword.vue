@@ -21,7 +21,7 @@
     </div>
     <!-- End Left Container -->
     <!-- Start Right Container -->
-    <div class="right" style="padding-top:40px;">
+    <div class="right" style="padding-top:60px;">
       <h2>Forget Password</h2>
       <span
         >Please enter your e-mail address to receive a <br />
@@ -29,6 +29,7 @@
       >
       <!-- Start Form  -->
       <form style="padding-top:70px;">
+           <div class="form-group">
         <!-- Email -->
         <label>Email</label>
         <input
@@ -37,6 +38,7 @@
           v-model="email"
           placeholder="name@example.com"
         />
+          </div>
         <!-- button -->
         <router-link :to="{ name: 'vemail'}">
           <button type="submit" class="btn btn-primary">
@@ -62,7 +64,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style>
 
 
 </style>
