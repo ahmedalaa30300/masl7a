@@ -7,9 +7,6 @@
 </template>
 
 <style lang="scss">
-  body{
-    overflow-x:hidden ;
-  }
   .page-enter-active, .page-leave-active {
   transition: opacity 1s, transform 1s;
 }
