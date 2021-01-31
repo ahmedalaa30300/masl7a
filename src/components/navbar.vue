@@ -1,31 +1,17 @@
 <template>
-      <!-- Navigation -->
+  <div>
+       <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
         <!-- Text Logo - Use this if you don't have a graphic logo -->
 
          <a class="navbar-brand logo-text page-scroll" style="color: white;" href="index.html">Msl7a</a> 
-
-        <!-- Mobile Menu Toggle Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-awesome fas fa-bars"></span>
-            <span class="navbar-toggler-awesome fas fa-times"></span>
-        </button>
-        <!-- end of mobile menu toggle button -->
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#services">Our Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#pricing">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#request">Contact</a>
-                </li>
+            
                 <li>
                     <button type="button" class="btn  btn-success btn-sm mx-4 rounded-pill">Sign in</button>
                 </li>
@@ -37,14 +23,57 @@
         </div>
     </nav> <!-- end of navbar -->
     <!-- end of navigation -->
+  
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
+<style></style>
 
-</style>
+
+ <!--
+   <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          MSL7A
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <router-link class="navbar-item" to="#">Home</router-link>
+
+          <router-link class="navbar-item" to="#">Fetures</router-link>
+
+          <router-link class="navbar-item" to="#">Our Services</router-link>
+
+          <router-link class="navbar-item" to="#">Top Worker</router-link>
+
+          <router-link class="navbar-item" to="#">FeedBack</router-link>
+
+          <router-link class="navbar-item" to="#">Reviews</router-link>
+
+          <router-link class="navbar-item" to="#">Contact</router-link>
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>-->

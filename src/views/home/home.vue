@@ -1,21 +1,38 @@
 <template>
     <div>
-        <div>home</div>
-        <router-link to="/signup">signup</router-link> <br>
-        <router-link to="/login"> login</router-link> <br>
-        <router-link to="/forgotpassword"> forgotpassword</router-link> <br>
-        <router-link to="/vemail"> verfiy email</router-link> <br>   
-        <router-link to="/newpassword"> newpassword</router-link>
-    
+        <body data-spy="scroll" data-target=".fixed-top">
+        <NavBar />
+        <Home />
+        <Features />
+        <OurServices />
+        <TopWorker />
+        <FeedBack />
+        <Reviews />
+        <Footer />
+        </body>
     </div>
 </template>
 
 <script>
 import NavBar from '../../components/navbar'
+import Home from '../../components/sections/home'
+import Features from '../../components/sections/features'
+import OurServices from '../../components/sections/ourservices'
+import TopWorker from '../../components/sections/topworker'
+import FeedBack from '../../components/sections/feedback'
+import Reviews from '../../components/sections/feedback'
+import Footer from '../../components/footer'
 
 export default {
-    components:[
-        NavBar
-    ]
+    components:{
+        Home,
+        NavBar,
+        Features,
+        OurServices,
+        TopWorker,
+        FeedBack,
+        Reviews,
+        Footer
+    }
 }
 </script>
