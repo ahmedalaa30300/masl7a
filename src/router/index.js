@@ -8,6 +8,7 @@ import login from '../views/auth/login';
 import forgotpassword from '../views/auth/forgotpassword';
 import vemail from '../views/auth/verfiyemail';
 import newpassword from '../views/auth/newpassword';
+import Header from '../components/sections/Header';
 
 Vue.use(VueRouter);
 
@@ -41,6 +42,11 @@ const routes = [
     path: '/newpassword',
     name: 'newpassword',
     component: newpassword
+  },
+  {
+    path: '/header',
+    name: 'header',
+    component: Header
   },
 ];
 
