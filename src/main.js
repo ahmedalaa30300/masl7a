@@ -6,6 +6,8 @@ import store from './store';
 import '../src/assets/main.css';
 import 'bulma';
 
+
+
 Vue.config.productionTip = false;
 
 new Vue({
