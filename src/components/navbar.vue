@@ -1,20 +1,18 @@
 <template>
-  <div>
+  <div class="navbar">
     <nav>
-      <div class="logoLeft">
-      
+      <div>
+        <h1><router-link :to="{ name: 'Home' }">Muso Ninjas</router-link></h1>
       </div>
-      <div class="right">
-        <router-link >
-        MSL7A
-      </router-link >
-        <router-link ><p>Home</p></router-link>
-        <router-link >Our Services</router-link>
-        <router-link >Top Worker</router-link>
-        <ruter-link>Feedback</ruter-link>
-        <ruter-link>Contact</ruter-link>
-        <ruter-link><button>Sign Up</button></ruter-link>
-        <ruter-link><button>Log In</button></ruter-link>
+
+      <div class="links">
+        <div>
+          <button>Log Out</button>
+        </div>
+        <div>
+          <router-link class="btn" :to="{ name: 'login' }">LogIn</router-link>
+          <router-link class="btn" :to="{ name: 'signup' }">SignUp</router-link>
+        </div>
       </div>
     </nav>
   </div>
@@ -24,8 +22,32 @@
 export default {};
 </script>
 
+
 <style scoped>
-.logoLeft{
-  background: red;
+.navbar {
+  padding: 16px 10px;
+  margin-bottom: 60px;
+  background: white;
+}
+nav {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav h1 {
+  margin-left: 20px;
+}
+nav .links {
+  margin-left: auto;
+}
+nav .links a,
+button {
+  margin-left: 16px;
+  font-size: 14px;
+}
+img {
+  max-height: 50px;
+  border-radius: 500px;
 }
 </style>
