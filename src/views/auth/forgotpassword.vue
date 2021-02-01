@@ -66,5 +66,102 @@ export default {
 
 <style>
 
+/* Container (left & right) */
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+/* left Container */
+.left {
+  text-align: center;
+  background-image: linear-gradient(#447ae6, #223d73);
+  text-align: center;
+  width: 50%;
+  height: 100vh;
+}
+/* left Image */
+.leftImage {
+  padding-top: 90px;
+  width: 280px;
+  height: 250px;
+}
+/* left Paragraph */
+.left p {
+  font-size: 12px;
+  font-family: Segoe UI;
+  color: white;
+  padding-top: 60px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+/* Dot Wrapper */
+.dots-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin: 60px;
+}
+.dot {
+  height: 13px;
+  width: 13px;
+  background-color: rgba(255, 255, 255, 0.336);
+  border-radius: 50%;
+  display: inline-block;
+  outline: none;
+  margin: 5px;
+}
+.dot:hover {
+  background: rgba(53, 53, 53, 0.466);
+}
+.dot.active {
+  background: white;
+}
+/* right Container*/
+.right {
+  display: block;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: Segoe UI;
+  color: black;
+  padding-top: 5px;
+}
+/* form */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 13px;
+  font-family: "Segoe UI";
+}
 
+/* inputs */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* button */
+button {
+  background-color: #4378e3;
+  opacity: 0.5;
+  color: white;
+  padding: 14px 20px;
+  margin: 25px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+}
+button:hover {
+  opacity: 1;
+}
 </style>

@@ -5,11 +5,11 @@ import router from './router';
 import store from './store';
 import '../src/assets/main.css';
 import 'bulma';
-
+import 'bootstrap'
+import '@fortawesome/vue-fontawesome'
 
 
 Vue.config.productionTip = false;
-
 new Vue({
   router,
   store,

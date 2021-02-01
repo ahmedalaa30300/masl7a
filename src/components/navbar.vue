@@ -1,20 +1,38 @@
 <template>
-  <div class="navbar">
-    <nav>
-      <div>
-        <h1><router-link :to="{ name: 'Home' }">Muso Ninjas</router-link></h1>
-      </div>
-
-      <div class="links">
-        <div>
-          <button>Log Out</button>
+  <div>
+    <section class="nav-bar">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand p-3" href="#">MSL7A</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Top Worker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class=" ms-2 me-4">
+              <button type="button" class="btn" style="background-color:white;">Signup</button>
+            </li>
+            <li class="">
+              <button type="button" class="btn btn-outline-light">Login</button>
+            </li>
+          </ul>
         </div>
-        <div>
-          <router-link class="btn" :to="{ name: 'login' }">LogIn</router-link>
-          <router-link class="btn" :to="{ name: 'signup' }">SignUp</router-link>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </section>
   </div>
 </template>
 
@@ -22,32 +40,15 @@
 export default {};
 </script>
 
-
 <style scoped>
-.navbar {
-  padding: 16px 10px;
-  margin-bottom: 60px;
-  background: white;
+.navbar{
+  background: #447AE6;
 }
-nav {
-  display: flex;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+a{
+  color: white;
+  font-weight: 600;
 }
-nav h1 {
-  margin-left: 20px;
-}
-nav .links {
-  margin-left: auto;
-}
-nav .links a,
-button {
-  margin-left: 16px;
-  font-size: 14px;
-}
-img {
-  max-height: 50px;
-  border-radius: 500px;
+button{
+  opacity: 10;
 }
 </style>

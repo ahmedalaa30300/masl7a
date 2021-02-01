@@ -104,8 +104,200 @@ export default {
 
 <style scoped>
 
-body{
-    margin: 0 auto;
+/* Container (left & right) */
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+/* left Container */
+.left {
+  text-align: center;
+  background-image: linear-gradient(#447ae6, #223d73);
+  text-align: center;
+  width: 50%;
+  height: 100vh;
+}
+/* left Image */
+.leftImage {
+  padding-top: 90px;
+  width: 280px;
+  height: 250px;
+}
+/* left Paragraph */
+.left p {
+  font-size: 12px;
+  font-family: Segoe UI;
+  color: white;
+  padding-top: 60px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+/* Dot Wrapper */
+.dots-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin: 60px;
+}
+.dot {
+  height: 13px;
+  width: 13px;
+  background-color: rgba(255, 255, 255, 0.336);
+  border-radius: 50%;
+  display: inline-block;
+  outline: none;
+  margin: 5px;
+}
+.dot:hover {
+  background: rgba(53, 53, 53, 0.466);
+}
+.dot.active {
+  background: white;
+}
+/* right Container*/
+.right {
+  display: block;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: Segoe UI;
+  color: black;
+  padding-top: 5px;
 }
 
+/* ul social account */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 1px;
+}
+.social li {
+  display: inline-block;
+  margin: 2px 20px 5px 0;
+}
+.social li a {
+  font-size: 12px;
+  font-weight: 600;
+  width: 180px;
+  margin: 1px 0 8px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.social li a i {
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  float: left;
+  color: #fff;
+  border-radius: 10px;
+}
+.social li a span {
+  margin-right: 10px;
+  color: #fff;
+}
+.facebook-i {
+  color: #fff;
+}
+.google-i {
+  color: #fff;
+}
+.facebook {
+  color: #4867aa;
+}
+.google {
+  color: #db4437;
+}
+/* or login with email & pass */
+.or-login {
+  width: 100%;
+  margin: 10px 0 5px;
+  text-align: center;
+  position: relative;
+}
+.or-login::before {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 100%;
+  height: 1px;
+  background: #d8dcdc;
+  content: "";
+}
+.or-login > span {
+  width: auto;
+  float: none;
+  display: inline-block;
+  background: #fff;
+  padding: 1px 20px;
+  z-index: 1;
+  position: relative;
+  font-family: Open Sans;
+  font-size: 15px;
+  color: #616161;
+  text-transform: capitalize;
+}
+/* form */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 13px;
+  font-family: "Segoe UI";
+}
+
+/* inputs */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* forget design*/
+.forget {
+  color: #4378e3;
+  font-size: 12px;
+  padding-left: 310px;
+  text-align: right;
+  text-decoration: none;
+}
+
+/* button */
+button {
+  background-color: #4378e3;
+  opacity: 0.5;
+  color: white;
+  padding: 14px 20px;
+  margin: 25px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+}
+button:hover {
+  opacity: 1;
+}
+/* create new account */
+.createNew {
+  margin: 15px;
+  text-align: center;
+}
+
+/* link signup design */
+.signupLink {
+  text-decoration: none;
+  font-weight: bold;
+  color: #4378e3;
+}
 </style>
