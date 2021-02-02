@@ -1,6 +1,6 @@
 <template>
     <div>
-        <NavBar />
+       <NavBar />
         <Header />
         <Features />
         <OurServices />

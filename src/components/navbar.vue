@@ -1,39 +1,43 @@
 <template>
-  <div>
-    <section class="nav-bar">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand p-3" href="#">MSL7A</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-           <i class="fas fa-bars"></i>
-          </button>
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Top Worker</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Feedback</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class=" ms-2 me-4">
-              <button type="button" class="btn" style="background-color:white;">Signup</button>
-            </li>
-            <li class="">
-              <button type="button" class="btn btn-outline-light">Login</button>
-            </li>
-          </ul>
-        </div>
-      </nav>
+<div>
+      <!--nav secion-->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MSL7A</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Top Workers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item ms-2 me-3">
+                            <a class="btn btn-primary" href="#">Signup</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </section>
-  </div>
+</div>
 </template>
 
 <script>
@@ -41,14 +45,32 @@ export default {};
 </script>
 
 <style scoped>
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 .navbar{
-  background: #447AE6;
+    background-image: linear-gradient(to right ,#447AE6, #223D73);
+    padding: 1 !important;
 }
-a{
-  color: white;
-  font-weight: 600;
+.navbar-nav{
+    padding: 0 10px;
 }
-button{
-  opacity: 10;
+.navbar-nav li a {
+    color: white !important;
+    font-weight: 600;
 }
+.navbar-brand{
+    color: white !important;
+}
+.fa-bars{
+    color: white;
+    font-size: 30px !important;
+}
+.navbar-toggler{
+    outline: none !important;
+    border: none !important;
+}
+
 </style>
