@@ -27,10 +27,10 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                         <li class="nav-item ms-2 me-3">
-                            <a class="btn btn-primary" href="#">Signup</a>
+                            <a class="btn btn-primary" href="/signup">Signup</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-primary" href="#">Login</a>
+                            <a class="btn btn-outline-primary" href="/login">Login</a>
                         </li>
                     </ul>
                 </div>

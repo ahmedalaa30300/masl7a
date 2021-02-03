@@ -1,10 +1,11 @@
 <template>
     <!-- Container Login-->
-  <div class="container">
+  <div class="flex-container">
     <!-- Start Left Container (image & text)-->
-    <div class="left">
+    <div class="content left">
+      <div class="col">
       <!-- image -->
-      <img class="leftImage" src="@/assets/Forgot.png" />
+      <img src="@/assets/Forgot.png" />
       <!-- text -->
       <p>
         Help us getting better by sending your thoughts about us and about our
@@ -19,10 +20,12 @@
         <span class="dot active"></span>
       </div>
     </div>
+    </div>
     <!-- End Left Container -->
     <!-- Start Right Container -->
-    <div class="right" style="padding-top:60px;">
-      <h2>Forget Password</h2>
+    <div class="content right">
+      <div class="col">
+      <h3>Forget Password</h3>
       <span
         >Please enter your e-mail address to receive a <br />
         verification code.</span
@@ -56,6 +59,7 @@
       </form>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -64,27 +68,30 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
 /* Container (left & right) */
-.container {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.flex-container {
   display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.content {
   height: 100%;
   width: 100%;
+  -webkit-flex: 1; /* Safari */
+  -ms-flex: 1; /* IE 10 */
+  flex: 1; /* Standard syntax */
+  display: flex;
 }
-/* left Container */
-.left {
-  text-align: center;
-  background-image: linear-gradient(#447ae6, #223d73);
-  text-align: center;
-  width: 50%;
-  height: 100vh;
-}
-/* left Image */
-.leftImage {
+.left img {
+  height: 450px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 90px;
-  width: 280px;
-  height: 250px;
 }
 /* left Paragraph */
 .left p {
@@ -117,17 +124,12 @@ export default {
 .dot.active {
   background: white;
 }
-/* right Container*/
-.right {
-  display: block;
-  width: 50%;
-  text-align: center;
-  align-items: center;
-  font-size: 20px;
-  font-family: Segoe UI;
-  color: black;
-  padding-top: 5px;
+h3 {
+  font-weight: 700;
+  padding-bottom: 10px
 }
+
+
 /* form */
 form {
   max-width: 400px;
