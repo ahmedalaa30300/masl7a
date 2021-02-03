@@ -69,6 +69,17 @@ export default {
 </script>
 
 <style scoped>
+.left{
+  background:#4378E3;
+  align-items: center;
+  margin: auto;
+  padding:auto;
+  text-align: center;
+  color: white;
+}
+p{
+  padding-top: 40px;
+}
 /* Container (left & right) */
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -93,21 +104,17 @@ body {
   margin-right: auto;
   padding-top: 90px;
 }
-/* left Paragraph */
-.left p {
-  font-size: 12px;
-  font-family: Segoe UI;
-  color: white;
-  padding-top: 60px;
+.right {
   text-align: center;
-  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
 }
 /* Dot Wrapper */
 .dots-wrapper {
   display: flex;
   justify-content: center;
   margin: auto;
-  margin: 60px;
+  margin: 50px;
 }
 .dot {
   height: 13px;

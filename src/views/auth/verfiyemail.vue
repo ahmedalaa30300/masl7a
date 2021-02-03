@@ -216,7 +216,22 @@ button {
 button:hover {
   opacity: 1;
 }
-
+.right {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.left{
+  background:#4378E3;
+  align-items: center;
+  margin: auto;
+  padding:auto;
+  text-align: center;
+  color: white;
+}
+p{
+  padding-top: 40px;
+}
 .verify {
   margin: 0 5px;
   text-align: center;

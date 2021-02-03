@@ -111,6 +111,17 @@ export default {};
 </script>
 
 <style scoped>
+.left {
+  background: #4378e3;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  color: white;
+}
+p {
+  padding-top: 40px;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -141,7 +152,7 @@ body {
   display: flex;
   justify-content: center;
   margin: auto;
-  margin: 60px;
+  margin: 50px;
 }
 .dot {
   height: 13px;

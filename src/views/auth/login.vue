@@ -101,6 +101,14 @@ export default {};
 </script>
 
 <style scoped>
+.left{
+  background:#4378E3;
+  align-items: center;
+  margin: auto;
+  padding:auto;
+  text-align: center;
+  color: white;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -124,12 +132,15 @@ body {
   margin-right: auto;
   padding-top: 90px;
 }
+p{
+  padding-top: 40px;
+}
 /* Dot Wrapper */
 .dots-wrapper {
   display: flex;
   justify-content: center;
   margin: auto;
-  margin: 60px;
+  margin: 50px;
 }
 .dot {
   height: 13px;
