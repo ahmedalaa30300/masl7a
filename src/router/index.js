@@ -8,6 +8,8 @@ import login from '../views/auth/login';
 import forgotpassword from '../views/auth/forgotpassword';
 import vemail from '../views/auth/verfiyemail';
 import newpassword from '../views/auth/newpassword';
+import Footer from '../components/footer';
+
 
 Vue.use(VueRouter);
 
@@ -42,6 +44,11 @@ const routes = [
     name: 'newpassword',
     component: newpassword
   },
+  {
+    path: '/footer',
+    name: 'footer', 
+    component: Footer
+  }
 ];
 
 const router = new VueRouter({
