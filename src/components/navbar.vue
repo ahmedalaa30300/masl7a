@@ -37,10 +37,10 @@
                 <a class="nav-link" href="#">Contact</a>
               </li>
               <li class="nav-item ms-2 me-3">
-                <a class="btn btn-primary" href="/signup">Signup</a>
+                <a class="btn" style="background:white; color: #3C6CCC !important;" href="/signup">Signup</a>
               </li>
               <li class="nav-item">
-                <a class="btn btn-outline-primary" href="/login">Login</a>
+                <a class="btn" style="border-color:white;" href="/login">Login</a>
               </li>
             </ul>
           </div>
@@ -65,11 +65,15 @@ export default {};
   width: 100%;
  
 }
+
 .navbar {
   padding: 1 !important;
 }
 .navbar-nav {
   padding: 0 10px;
+}
+.navbar-nav li {
+  padding-right: 15px;
 }
 .navbar-nav li a {
   color: white !important;
