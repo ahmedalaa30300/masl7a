@@ -9,12 +9,6 @@
           services, you can also mention any other points that are related by<br />
           sending your by sending thoughts by sending your thoughts.
         </p>
-
-        <div class="dots-wrapper">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot active"></span>
-        </div>
       </div>
     </div>
     <div class="content right">
@@ -165,28 +159,7 @@ body {
   text-align: center;
   letter-spacing: 1px;
 }
-/* Dot Wrapper */
-.dots-wrapper {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin: 60px;
-}
-.dot {
-  height: 13px;
-  width: 13px;
-  background-color: rgba(255, 255, 255, 0.336);
-  border-radius: 50%;
-  display: inline-block;
-  outline: none;
-  margin: 5px;
-}
-.dot:hover {
-  background: rgba(53, 53, 53, 0.466);
-}
-.dot.active {
-  background: white;
-}
+
 h3 {
   font-weight: 700;
   padding-bottom: 10px;

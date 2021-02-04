@@ -5,18 +5,13 @@
         <!-- image -->
         <img src="@/assets/Login.png" />
         <!-- text -->
+
         <p>
           Help us getting better by sending your thoughts about us and about our
           services,<br />
           you can also mention any other points that are related by<br />
           sending your by sending thoughts by sending your thoughts.
         </p>
-        <!-- dots -->
-        <div class="dots-wrapper">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
       </div>
     </div>
 
@@ -32,7 +27,13 @@
               class="facebook"
               style="  background: #4867aa;"
             >
-              <i class="fa fa-facebook facebook-i"></i>
+              <font-awesome-icon
+                :icon="['fab', 'facebook-f']"
+                transform="shrink-3.5 down-1.6 right-1.25"
+                style="color:white; margin-right:10px;"
+                size="2x"
+              />
+              <!-- <i class="fa fa-facebook facebook-i"></i> -->
               <span>Login With Facebook</span>
             </a>
           </li>
@@ -43,7 +44,12 @@
               class="google"
               style="  background: #db4437;"
             >
-              <i class="fa fa-google google-i"></i>
+              <font-awesome-icon
+                :icon="['fab', 'google']"
+                transform="shrink-3.5 down-1.6 right-1.25"
+                style="color:white; margin-right:10px;"
+                size="2x"
+              />
               <span>Login With Google</span>
             </a>
           </li>
@@ -101,11 +107,11 @@ export default {};
 </script>
 
 <style scoped>
-.left{
-  background:#4378E3;
+.left {
+  background: #4378e3;
   align-items: center;
   margin: auto;
-  padding:auto;
+  padding: auto;
   text-align: center;
   color: white;
 }
@@ -132,39 +138,26 @@ body {
   margin-right: auto;
   padding-top: 90px;
 }
-p{
+p {
   padding-top: 40px;
-}
-/* Dot Wrapper */
-.dots-wrapper {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin: 50px;
-}
-.dot {
-  height: 13px;
-  width: 13px;
-  background-color: rgba(255, 255, 255, 0.336);
-  border-radius: 50%;
-  display: inline-block;
-  outline: none;
-  margin: 5px;
-}
-.dot:hover {
-  background: rgba(53, 53, 53, 0.466);
-}
-.dot.active {
-  background: white;
 }
 .right {
   text-align: center;
   align-items: center;
   justify-content: center;
 }
-h3{
-    font-weight: 700;
+/* left Paragraph */
+.left p {
+  font-size: 12px;
+  font-family: Segoe UI;
+  color: white;
+  padding-top: 60px;
+  text-align: center;
+  letter-spacing: 1px;
+}
 
+h3 {
+  font-weight: 700;
 }
 /* ul social account */
 ul {
@@ -250,7 +243,7 @@ form {
   text-align: left;
   font-size: 13px;
   font-family: "Segoe UI";
-    padding-top: 30px;
+  padding-top: 30px;
 }
 /* inputs */
 input[type="email"],

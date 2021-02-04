@@ -13,12 +13,6 @@
           you can also mention any other points that are related by<br />
           sending your by sending thoughts by sending your thoughts.
         </p>
-        <!-- dots -->
-        <div class="dots-wrapper">
-          <span class="dot"></span>
-          <span class="dot active"></span>
-          <span class="dot"></span>
-        </div>
       </div>
     </div>
     <!-- End Left Container -->
@@ -34,8 +28,14 @@
               href="https://www.facebook.com/"
               class="facebook"
               style="  background: #4867aa;"
-              ><i class="fa fa-facebook facebook-i"></i
-              ><span>Login With Facebook</span></a
+            >
+              <font-awesome-icon
+                :icon="['fab', 'facebook-f']"
+                transform="shrink-3.5 down-1.6 right-1.25"
+                style="color:white; margin-right:10px;"
+                size="2x"
+              />
+              <span>Login With Facebook</span></a
             >
           </li>
           <!-- Google -->
@@ -44,8 +44,14 @@
               href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=AddSession"
               class="google"
               style="  background: #db4437;"
-              ><i class="fa fa-google google-i"></i
-              ><span>Login With Google</span></a
+            >
+              <font-awesome-icon
+                :icon="['fab', 'google']"
+                transform="shrink-3.5 down-1.6 right-1.25"
+                style="color:white; margin-right:10px;"
+                size="2x"
+              />
+              <span>Login With Google</span></a
             >
           </li>
         </ul>
@@ -146,29 +152,16 @@ body {
   margin-right: auto;
   padding-top: 90px;
 }
+/* left Paragraph */
+.left p {
+  font-size: 12px;
+  font-family: Segoe UI;
+  color: white;
+  padding-top: 60px;
+  text-align: center;
+  letter-spacing: 1px;
+}
 
-/* Dot Wrapper */
-.dots-wrapper {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin: 50px;
-}
-.dot {
-  height: 13px;
-  width: 13px;
-  background-color: rgba(255, 255, 255, 0.336);
-  border-radius: 50%;
-  display: inline-block;
-  outline: none;
-  margin: 5px;
-}
-.dot:hover {
-  background: rgba(53, 53, 53, 0.466);
-}
-.dot.active {
-  background: white;
-}
 .right {
   text-align: center;
   align-items: center;
