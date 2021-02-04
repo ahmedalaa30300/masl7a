@@ -12,44 +12,44 @@
           with any of your questions!
         </p>
         <div class="row text-center">
-          <div class="col-3 services">
+          <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
             <img src="@/assets/24-hours.png" class="service-img" />
             <h4>All Time Support</h4>
             <p>We will serve you with special all over the day !</p>
           </div>
-          <div class="col-3 services">
+          <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
             <img src="@/assets/24-hours.png" class="service-img" />
             <h4>All Time Support</h4>
             <p>We will serve you with special all over the day !</p>
           </div>
-          <div class="col-3 services">
+          <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
             <img src="@/assets/chat (2).png" class="service-img" />
             <h4>Chatting</h4>
             <p>You can get connected with your service provider.</p>
           </div>
-          <div class="col-3 services">
+          <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
             <img src="@/assets/order-tracking1.png" class="service-img" />
             <h4>Location Tracking</h4>
             <p>You can now track your service provider at any time.</p>
           </div>
         </div>
         <div class="row text-center">
-          <div class="col-3 services">
+          <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
             <img src="@/assets/Group 1400.png" class="service-img" />
             <h4>All Time Support</h4>
             <p>We will serve you with special all over the day !</p>
           </div>
-          <div class="col-3 services">
+          <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
             <img src="@/assets/surface1.png" class="service-img" />
             <h4>Chatting</h4>
             <p>You can get connected with your service provider.</p>
           </div>
-          <div class="col-3 services">
+          <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
             <img src="@/assets/order-tracking1.png" class="service-img" />
             <h4>Location Tracking</h4>
             <p>You can now track your service provider at any time.</p>
           </div>
-          <div class="col-3 services">
+          <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
             <img src="@/assets/order-tracking1.png" class="service-img" />
             <h4>Location Tracking</h4>
             <p>You can now track your service provider at any time.</p>
@@ -78,7 +78,9 @@ export default {};
   box-shadow: 5px 5px 5px grey;
   border-radius: 10px;
   margin-bottom: 20px;
-  height: 280px;
+ height: 250px;
+  width: 300px;
+  margin-right: 30px;
 }
 .services h2 {
   padding: 5px;
