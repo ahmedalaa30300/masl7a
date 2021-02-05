@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <section>
     <!--services section-->
-    <section id="worker">
-      <div class="container text-center">
+    <div id="worker">
+      <div class="container text-center" id="topworkers">
         <h1 class="mainTitle">
           Meet Our Top Workers Of The Year
         </h1>
@@ -12,43 +12,43 @@
         </p>
         <div class="row text-center" style="padding-top:30px;">
           <div class="col-3 shadow p-3 mb-5 bg-white rounded worker">
-            <img src="@/assets/p1.png" class="worker-img" />
+            <img src="@/assets/topworker/p1.png" class="worker-img" />
             <h5>All Time Support</h5>
             <p>We will serve you with special all over the day !</p>
             <div class="row allsocial">
-              <img class="social" src="../../assets/face.png" />
-              <img class="social" src="../../assets/insta.png" alt="" />
-              <img class="social" src="../../assets/twet.png" alt="" />
+              <img class="social" src="../../assets/topworker/facebook.png" />
+              <img class="social" src="../../assets/topworker/insta.png" alt="" />
+              <img class="social" src="../../assets/topworker/twet.png" alt="" />
             </div>
           </div>
           <div class="col-3 shadow p-3 mb-5 bg-white rounded worker">
-            <img src="@/assets/p2.png" class="worker-img" />
+            <img src="@/assets/topworker/p2.png" class="worker-img" />
             <h5>Chatting</h5>
             <p>You can get connected with your service provider.</p>
             <div class="row allsocial">
-              <img class="social" src="../../assets/face.png" />
-              <img class="social" src="../../assets/insta.png" alt="" />
-              <img class="social" src="../../assets/twet.png" alt="" />
+              <img class="social" src="../../assets/topworker/facebook.png" />
+              <img class="social" src="../../assets/topworker/insta.png" alt="" />
+              <img class="social" src="../../assets/topworker/twet.png" alt="" />
             </div>
           </div>
           <div class="col-3 shadow p-3 mb-5 bg-white rounded worker">
-            <img src="@/assets/p3.png" class="worker-img" />
+            <img src="@/assets/topworker/p3.png" class="worker-img" />
             <h5>Location Tracking</h5>
             <p>You can now track your service provider at any time.</p>
             <div class="row allsocial">
-              <img class="social" src="../../assets/face.png" />
-              <img class="social" src="../../assets/insta.png" alt="" />
-              <img class="social" src="../../assets/twet.png" alt="" />
+              <img class="social" src="../../assets/topworker/facebook.png" />
+              <img class="social" src="../../assets/topworker/insta.png" alt="" />
+              <img class="social" src="../../assets/topworker/twet.png" alt="" />
             </div>
           </div>
           <div class="col-3 shadow p-3 mb-5 bg-white rounded worker">
-            <img src="@/assets/p4.png" class="worker-img" />
+            <img src="@/assets/topworker/p4.png" class="worker-img" />
             <h5>All Time Support</h5>
             <p>We will serve you with special all over the day !</p>
             <div class="row allsocial">
-              <img class="social" src="../../assets/face.png" />
-              <img class="social" src="../../assets/insta.png" alt="" />
-              <img class="social" src="../../assets/twet.png" alt="" />
+              <img class="social" src="../../assets/topworker/facebook.png" />
+              <img class="social" src="../../assets/topworker/insta.png" alt="" />
+              <img class="social" src="../../assets/topworker/twet.png" alt="" />
             </div>
           </div>
         </div>
@@ -56,8 +56,8 @@
           View More
         </button>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -67,6 +67,7 @@ export default {};
 <style scoped>
 #worker {
   padding: 80px 0;
+  margin-top:150px ;
 }
 .worker {
   padding: 10px;
@@ -101,5 +102,6 @@ export default {};
   margin-left: 1150px;
   font-weight: 700;
   color: #4379e4;
+  margin-top: -10px;
 }
 </style>

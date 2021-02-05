@@ -2,7 +2,7 @@
   <div class="flex-container">
     <div class="content left">
       <div class="col">
-        <img src="@/assets/Login.png" />
+        <img src="@/assets/auth/Login.png" />
         <p>
           Help us getting better by sending your thoughts about us and about our
           services,<br />

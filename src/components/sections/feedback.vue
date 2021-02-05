@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-container">
+  <div class="flex-container" >
     <div class="content left">
       <div class="col">
         <h3>Feedback</h3>
@@ -20,7 +20,7 @@
 
     <div class="content right">
       <div class="col">
-        <img src="../../assets/feedback.png" alt="" />
+        <img src="../../assets/feedback/feedback.png" alt="" />
       </div>
     </div>
   </div>

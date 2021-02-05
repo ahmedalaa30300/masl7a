@@ -1,8 +1,8 @@
 <template>
-  <div class="flex-container">
+  <div class="flex-container" id="reviews">
     <div class="content left">
       <div class="col">
-        <img src="../../assets/Reviews.png" alt="" />
+        <img src="../../assets/feedback/Reviews.png" alt="" />
       </div>
     </div>
 
@@ -16,11 +16,11 @@
           <div class="col-3 shadow p-3 mb-5 bg-white rounded Reviews">
             <div class="row">
               <div class="col">
-                <img src="@/assets/p1.png" class="review-img" />
+                <img src="@/assets/topworker/p1.png" class="review-img" />
               </div>
               <div class="col">
                 <p class="name">Roger Cunningham</p>
-                <img class="star" src="@/assets/Group 1126.png" alt="" />
+                <img class="star" src="@/assets/feedback/stars.png" alt="" />
               </div>
             </div>
             <p>
@@ -32,11 +32,11 @@
           <div class="col-3 shadow p-3 mb-5 bg-white rounded Reviews">
             <div class="row">
               <div class="col">
-                <img src="@/assets/p1.png" class="review-img" />
+                <img src="@/assets/topworker/p1.png" class="review-img" />
               </div>
               <div class="col">
                 <p class="name">Roger Cunningham</p>
-                <img class="star" src="@/assets/Group 1126.png" alt="" />
+                <img class="star" src="@/assets/feedback/stars.png" alt="" />
               </div>
             </div>
 

@@ -1,8 +1,7 @@
 <template>
-  <div>
     <!--banner section-->
-    <section id="banner">
-      <div class="container">
+    <section id="banner" >
+      <div class="container" id="home">
         <div class="row justify-content-center">
           <div class="col-md-6 pt-5" style="margin-top:170px;">
             <p class="col-md-6 pt-5 fs-3">Welcome To Our Website</p>
@@ -21,13 +20,13 @@
             </div>
           </div>
           <div class="col-6 " style="margin-top:150px;">
-            <img src="@/assets/header.png" class="img-fluid" />
+            <img src="@/assets/home/home.png" class="img-fluid" />
           </div>
         </div>
       </div>
-      <!--<img src="./images/Path 2598.png" class="bottom-img">-->
+   
     </section>
-  </div>
+
 </template>
 
 <script>
@@ -36,12 +35,13 @@ export default {};
 
 <style scoped>
 #banner {
-  background-image: url("../../assets/Path738.png");
+  background-image: url("../../assets/home/homebg.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
   background-size: 900px 640px;
   color: #fff;
+  margin-bottom: 100px;
 }
 .title {
   font-size: 30px;

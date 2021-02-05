@@ -1,7 +1,7 @@
 <template>
-  <div>
+
     <!--services section-->
-    <section id="services">
+    <section id="features">
       <div class="container text-center">
         <h1 class="mainTitle">
           We Provide Best Dispatch And<br />
@@ -13,51 +13,51 @@
         </p>
         <div class="row text-center">
           <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
-            <img src="@/assets/24-hours.png" class="service-img" />
+            <img src="@/assets/home/24hours.png" class="service-img" />
             <h4>All Time Support</h4>
             <p>We will serve you with special all over the day !</p>
           </div>
           <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
-            <img src="@/assets/24-hours.png" class="service-img" />
+            <img src="@/assets/home/24hours.png" class="service-img" />
             <h4>All Time Support</h4>
             <p>We will serve you with special all over the day !</p>
           </div>
           <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
-            <img src="@/assets/chat (2).png" class="service-img" />
+            <img src="@/assets/home/chaticon.png" class="service-img" />
             <h4>Chatting</h4>
             <p>You can get connected with your service provider.</p>
           </div>
           <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
-            <img src="@/assets/order-tracking1.png" class="service-img" />
+            <img src="@/assets/home/Searchicon.png" class="service-img" />
             <h4>Location Tracking</h4>
             <p>You can now track your service provider at any time.</p>
           </div>
         </div>
         <div class="row text-center">
           <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
-            <img src="@/assets/Group 1400.png" class="service-img" />
+            <img src="@/assets/home/icon.png" class="service-img" />
             <h4>All Time Support</h4>
             <p>We will serve you with special all over the day !</p>
           </div>
           <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
-            <img src="@/assets/surface1.png" class="service-img" />
+            <img src="@/assets/home/cardicon.png" class="service-img" />
             <h4>Chatting</h4>
             <p>You can get connected with your service provider.</p>
           </div>
           <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
-            <img src="@/assets/order-tracking1.png" class="service-img" />
+            <img src="@/assets/home/Searchicon.png" class="service-img" />
             <h4>Location Tracking</h4>
             <p>You can now track your service provider at any time.</p>
           </div>
           <div class="col-3 shadow p-3 mb-5 bg-white rounded services">
-            <img src="@/assets/order-tracking1.png" class="service-img" />
+            <img src="@/assets/home/Searchicon.png" class="service-img" />
             <h4>Location Tracking</h4>
             <p>You can now track your service provider at any time.</p>
           </div>
         </div>
       </div>
     </section>
-  </div>
+
 </template>
 
 <script>
@@ -66,8 +66,9 @@ export default {};
 
 <style scoped>
 /*---------------services section------------*/
-#services {
+#features {
   padding: 80px 0;
+    margin-bottom: 100px;
 }
 .services {
   padding: 20px;
