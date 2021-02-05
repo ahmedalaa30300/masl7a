@@ -9,6 +9,7 @@ import forgotpassword from '../views/auth/forgotpassword';
 import vemail from '../views/auth/verfiyemail';
 import newpassword from '../views/auth/newpassword';
 import Header from '../components/sections/Header';
+import feedback from '../components/sections/feedback';
 
 Vue.use(VueRouter);
 
@@ -47,6 +48,11 @@ const routes = [
     path: '/header',
     name: 'header',
     component: Header
+  },
+  {
+    path: '/feedback',
+    name: 'feedback',
+    component: feedback
   },
 ];
 

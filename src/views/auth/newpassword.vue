@@ -59,28 +59,6 @@ export default {};
 </script>
 
 <style scoped>
-.left{
-  background:#4378E3;
-  align-items: center;
-  margin: auto;
-  padding:auto;
-  text-align: center;
-  color: white;
-}
-.right {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-h3 {
-  font-weight: 700;
-  padding-bottom: 10px
-}
-
-p{
-  padding-top: 40px;
-}
-/* Container (left & right) */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -97,6 +75,14 @@ body {
   flex: 1; /* Standard syntax */
   display: flex;
 }
+.left {
+  background-image: linear-gradient(to bottom , #447AE6 ,#223D73);
+  align-items: center;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  color: white;
+}
 .left img {
   height: 450px;
   width: 400px;
@@ -104,21 +90,31 @@ body {
   margin-right: auto;
   padding-top: 90px;
 }
-/* left Paragraph */
 .left p {
-  font-size: 12px;
+  font-size: 14px;
   font-family: Segoe UI;
   color: white;
-  padding-top: 60px;
+  padding-top: 80px;
   text-align: center;
   letter-spacing: 1px;
+  font-weight: 500;
+}
+.right {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 h3 {
   font-weight: 700;
   padding-bottom: 10px;
 }
-
-/* form */
+p {
+  padding-top: 40px;
+}
+h3 {
+  font-weight: 700;
+  padding-bottom: 10px;
+}
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -126,8 +122,6 @@ form {
   font-size: 13px;
   font-family: "Segoe UI";
 }
-
-/* inputs */
 input[type="email"],
 input[type="password"] {
   width: 100%;
@@ -138,8 +132,6 @@ input[type="password"] {
   box-sizing: border-box;
   border-radius: 10px;
 }
-
-/* button */
 button {
   background-color: #4378e3;
   opacity: 0.5;

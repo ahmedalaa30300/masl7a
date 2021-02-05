@@ -2,10 +2,7 @@
   <div class="flex-container">
     <div class="content left">
       <div class="col">
-        <!-- image -->
         <img src="@/assets/Login.png" />
-        <!-- text -->
-
         <p>
           Help us getting better by sending your thoughts about us and about our
           services,<br />
@@ -18,9 +15,7 @@
     <div class="content right">
       <div class="col">
         <h3>Log In</h3>
-        <!-- Social Accounts -->
         <ul class="social">
-          <!-- Facebook -->
           <li>
             <a
               href="https://www.facebook.com/"
@@ -33,11 +28,9 @@
                 style="color:white; margin-right:10px;"
                 size="2x"
               />
-              <!-- <i class="fa fa-facebook facebook-i"></i> -->
               <span>Login With Facebook</span>
             </a>
           </li>
-          <!-- Google -->
           <li>
             <a
               href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=AddSession"
@@ -54,14 +47,10 @@
             </a>
           </li>
         </ul>
-        <!-- End Social Accounts -->
-        <!-- Or -->
         <div class="or-login clearfix">
           <span>Or</span>
         </div>
-        <!-- Start Form  -->
         <form class="form">
-          <!-- Email -->
           <label for="uname">E-mail</label>
           <input
             type="email"
@@ -69,7 +58,6 @@
             v-model="email"
             placeholder="name@example.com"
           />
-          <!-- Password  -->
           <label for="psw">Password</label>
           <input
             type="password"
@@ -77,18 +65,14 @@
             v-model="password"
             placeholder="at least 8 charachters"
           />
-          <!-- Forget Password  -->
           <router-link class="forget" :to="{ name: 'forgotpassword' }">
             Forget Password
           </router-link>
-          <!-- CheckBox Remember Me -->
           <label class="checkbox">
             <input type="checkbox" checked="checked" name="remember" />
             Remember Me
           </label>
-          <!-- Button  -->
           <button>Login</button>
-          <!-- Create New Account  -->
           <div class="createNew">
             Don't have an account?
             <router-link class="signupLink" :to="{ name: 'signup' }">
@@ -96,7 +80,6 @@
             </router-link>
           </div>
         </form>
-        <!-- End Form  -->
       </div>
     </div>
   </div>
@@ -107,14 +90,6 @@ export default {};
 </script>
 
 <style scoped>
-.left {
-  background: #4378e3;
-  align-items: center;
-  margin: auto;
-  padding: auto;
-  text-align: center;
-  color: white;
-}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -131,6 +106,14 @@ body {
   flex: 1; /* Standard syntax */
   display: flex;
 }
+.left {
+  background-image: linear-gradient(to bottom , #447AE6 ,#223D73);
+  align-items: center;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  color: white;
+}
 .left img {
   height: 450px;
   width: 350px;
@@ -138,24 +121,21 @@ body {
   margin-right: auto;
   padding-top: 90px;
 }
-p {
-  padding-top: 40px;
+
+.left p {
+  font-size: 14px;
+  font-family: Segoe UI;
+  color: white;
+  padding-top: 80px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 .right {
   text-align: center;
   align-items: center;
   justify-content: center;
 }
-/* left Paragraph */
-.left p {
-  font-size: 12px;
-  font-family: Segoe UI;
-  color: white;
-  padding-top: 60px;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
 h3 {
   font-weight: 700;
 }
@@ -183,22 +163,9 @@ ul {
   text-decoration: none;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-.social li a i {
-  height: 35px;
-  width: 35px;
-  line-height: 35px;
-  float: left;
-  color: #fff;
-  border-radius: 10px;
-}
+
 .social li a span {
   margin-right: 10px;
-  color: #fff;
-}
-.facebook-i {
-  color: #fff;
-}
-.google-i {
   color: #fff;
 }
 .facebook {

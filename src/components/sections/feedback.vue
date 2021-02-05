@@ -91,6 +91,5 @@ button {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
-
 }
 </style>

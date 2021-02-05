@@ -1,12 +1,8 @@
 <template>
-  <!-- Container Login-->
   <div class="flex-container">
-    <!-- Start Left Container (image & text)-->
     <div class="content left">
       <div class="col">
-        <!-- image -->
         <img src="@/assets/Signup.png" />
-        <!-- text -->
         <p>
           Help us getting better by sending your thoughts about us and about our
           services,<br />
@@ -15,14 +11,11 @@
         </p>
       </div>
     </div>
-    <!-- End Left Container -->
-    <!-- Start Right Container -->
+
     <div class="content right">
       <div class="col">
         <h3>Sign Up</h3>
-        <!-- Social Accounts -->
         <ul class="social">
-          <!-- Facebook -->
           <li>
             <a
               href="https://www.facebook.com/"
@@ -38,7 +31,6 @@
               <span>Login With Facebook</span></a
             >
           </li>
-          <!-- Google -->
           <li>
             <a
               href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=AddSession"
@@ -55,17 +47,12 @@
             >
           </li>
         </ul>
-        <!-- End Social Accounts -->
-        <!-- Or -->
         <div class="or-login clearfix">
           <span>Or</span>
         </div>
-        <!-- Start Form  -->
         <form>
-          <!-- Name -->
           <label>Full Name</label>
           <input type="text" required v-model="text" placeholder="full name" />
-          <!-- Email  -->
           <label>Email</label>
           <input
             type="email"
@@ -73,7 +60,6 @@
             v-model="email"
             placeholder="name@example.com"
           />
-          <!-- Password  -->
           <label>Password</label>
           <input
             type="password"
@@ -81,7 +67,6 @@
             v-model="password"
             placeholder="at least 8 charachters"
           />
-          <!-- checkbox  -->
           <div class="form-group form-check">
             <input
               type="checkbox"
@@ -95,9 +80,7 @@
               <span class="privacy">NotificationSettings</span> .
             </label>
           </div>
-          <!-- Button  -->
           <button>Create Account</button>
-          <!-- Login -->
           <span class="alreadyhave"
             >Already Have An Account ?
             <router-link
@@ -117,17 +100,6 @@ export default {};
 </script>
 
 <style scoped>
-.left {
-  background: #4378e3;
-  align-items: center;
-  margin: auto;
-  padding: auto;
-  text-align: center;
-  color: white;
-}
-p {
-  padding-top: 40px;
-}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -144,6 +116,14 @@ body {
   flex: 1; /* Standard syntax */
   display: flex;
 }
+.left {
+  background-image: linear-gradient(to bottom , #447AE6 ,#223D73);
+  align-items: center;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  color: white;
+}
 /* left Image */
 .left img {
   height: 450px;
@@ -154,14 +134,17 @@ body {
 }
 /* left Paragraph */
 .left p {
-  font-size: 12px;
+  font-size: 14px;
   font-family: Segoe UI;
   color: white;
-  padding-top: 60px;
+  padding-top: 80px;
   text-align: center;
   letter-spacing: 1px;
+  font-weight: 500;
 }
-
+p {
+  padding-top: 40px;
+}
 .right {
   text-align: center;
   align-items: center;
@@ -194,22 +177,8 @@ ul {
   text-decoration: none;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-.social li a i {
-  height: 35px;
-  width: 35px;
-  line-height: 35px;
-  float: left;
-  color: #fff;
-  border-radius: 10px;
-}
 .social li a span {
   margin-right: 10px;
-  color: #fff;
-}
-.facebook-i {
-  color: #fff;
-}
-.google-i {
   color: #fff;
 }
 .facebook {
@@ -294,19 +263,5 @@ button:hover {
   padding-left: 90px;
 }
 
-.i-code {
-  border: none;
-  background-image: none;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  text-align: center;
-  height: 60px;
-  width: 60px;
-  border-radius: 10px;
-  margin: 0 4px;
-  border: 2px solid #4f5b66;
-  font-size: 38px;
-}
+
 </style>

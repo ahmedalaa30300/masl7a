@@ -23,7 +23,6 @@
                 <img class="star" src="@/assets/Group 1126.png" alt="" />
               </div>
             </div>
-
             <p>
               Now Workers Can Co-operate With Each Others Creating A Virtual
               Workshop That Will Serve You In A More Efficient Way On A Large

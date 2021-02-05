@@ -69,18 +69,18 @@ export default {};
 #services {
   padding: 80px 0;
 }
-.service-img {
-  width: 70px;
-  margin-top: 20px;
-}
 .services {
   padding: 20px;
   box-shadow: 5px 5px 5px grey;
   border-radius: 10px;
   margin-bottom: 20px;
- height: 250px;
+  height: 250px;
   width: 300px;
   margin-right: 30px;
+}
+.service-img {
+  width: 70px;
+  margin-top: 20px;
 }
 .services h2 {
   padding: 5px;

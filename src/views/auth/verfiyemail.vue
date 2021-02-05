@@ -143,6 +143,17 @@ body {
   flex: 1; /* Standard syntax */
   display: flex;
 }
+.left {
+  background-image: linear-gradient(to bottom , #447AE6 ,#223D73);
+  align-items: center;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  color: white;
+}
+p {
+  padding-top: 40px;
+}
 .left img {
   height: 450px;
   width: 500px;
@@ -152,19 +163,23 @@ body {
 }
 /* left Paragraph */
 .left p {
-  font-size: 12px;
+  font-size: 14px;
   font-family: Segoe UI;
   color: white;
-  padding-top: 60px;
+  padding-top: 80px;
   text-align: center;
   letter-spacing: 1px;
+  font-weight: 500;
 }
-
+.right {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 h3 {
   font-weight: 700;
   padding-bottom: 10px;
 }
-
 /* form */
 form {
   max-width: 400px;
@@ -172,61 +187,6 @@ form {
   text-align: left;
   font-size: 13px;
   font-family: "Segoe UI";
-}
-
-/* button */
-button {
-  background-color: #4378e3;
-  opacity: 0.5;
-  color: white;
-  padding: 14px 20px;
-  margin: 25px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  border-radius: 10px;
-}
-button:hover {
-  opacity: 1;
-}
-.right {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.left{
-  background:#4378E3;
-  align-items: center;
-  margin: auto;
-  padding:auto;
-  text-align: center;
-  color: white;
-}
-p{
-  padding-top: 40px;
-}
-.verify {
-  margin: 0 5px;
-  text-align: center;
-  line-height: 80px;
-  font-size: 50px;
-  border: solid 1px #ccc;
-  box-shadow: 0 0 5px #ccc inset;
-  outline: none;
-  width: 20%;
-  transition: all 0.2s ease-in-out;
-  border-radius: 3px;
-}
-.verify:focus {
-  border-color: purple;
-  box-shadow: 0 0 5px purple inset;
-}
-.verify:selection {
-  background: transparent;
-}
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
 }
 .i-code {
   border: none;
@@ -246,44 +206,25 @@ input[type="number"]::-webkit-outer-spin-button {
     outline: none;
   }
 }
-.form-group {
-  width: 500px;
-  margin: auto;
-  label {
-    text-align: left;
-    display: block;
-    font-weight: 400;
-  }
-  .form-control {
-    border-radius: 10px;
-  }
-  .highlight {
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  .create-account {
-    .btn-create-account {
-      width: 461px;
-      opacity: 0.5019607843137255;
-      background-color: #4378e3;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 10px;
-      padding: 6px;
-      margin-right: 10px;
-      box-shadow: 2px 2px 3px grey;
-      height: 50px;
-      margin-bottom: 20px;
-      transition: all 0.2s;
-      &:hover {
-        opacity: 1;
-      }
-      &:focus {
-        outline: none;
-      }
-    }
-  }
+
+/* button */
+button {
+  background-color: #4378e3;
+  opacity: 0.5;
+  color: white;
+  padding: 14px 20px;
+  margin: 25px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+}
+button:hover {
+  opacity: 1;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
 </style>

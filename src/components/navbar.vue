@@ -3,47 +3,45 @@
     <!--nav secion-->
     <section id="nav-bar">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">MSL7A</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Our Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Top Workers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Feedback</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item ms-2 me-3">
-                <a class="btn" style="background:white; color: #3C6CCC !important;" href="/signup">Signup</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn" style="border-color:white;" href="/login">Login</a>
-              </li>
-            </ul>
-          </div>
+        <a class="navbar-brand" href="#">MSL7A</a>
+        <div class="navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li>
+              <a class="router nav-link" href="/header" v-smooth-scroll>Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Our Services</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Top Workers</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/feedback" v-smooth-scroll="{ duration: 1000, offset: -50, container: '#container', updateHistory: false }">Feedback</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class=" ms-2 me-3">
+              <a href="/signup">
+                <button
+                  class="btn"
+                  style="background:white; color: #3C6CCC !important;"
+                >
+                  Signup
+                </button></a
+              >
+            </li>
+            <li>
+              <a href="/login">
+                <button
+                  class="btn"
+                  style="border-color:white !important; color:white !important"
+                >
+                  Login
+                </button></a
+              >
+            </li>
+          </ul>
         </div>
       </nav>
     </section>
@@ -63,11 +61,15 @@ export default {};
   overflow: hidden;
   top: 0;
   width: 100%;
- 
 }
-
 .navbar {
   padding: 1 !important;
+  background: #4073da;
+}
+.navbar-brand {
+  color: white !important;
+  padding-left: 15px;
+  font-weight: 500;
 }
 .navbar-nav {
   padding: 0 10px;
@@ -78,16 +80,5 @@ export default {};
 .navbar-nav li a {
   color: white !important;
   font-weight: 600;
-}
-.navbar-brand {
-  color: black !important;
-}
-.fa-bars {
-  color: white;
-  font-size: 30px !important;
-}
-.navbar-toggler {
-  outline: none !important;
-  border: none !important;
 }
 </style>

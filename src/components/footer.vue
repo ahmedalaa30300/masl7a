@@ -22,6 +22,5 @@ footer{
 .footer{
     width:1525px;
     height: 500px;
-
 }
 </style>
